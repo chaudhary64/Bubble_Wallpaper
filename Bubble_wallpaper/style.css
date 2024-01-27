@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.gooey {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: black;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 5s linear;
+    mix-blend-mode: multiply;
+    filter: blur(10px);
+}
